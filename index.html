@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Tetris </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+        <main>
+            <div class="side_col_hold">
+                <div class="side_placeholder_hold">
+                    <canvas id="hold_piece">
+                    </canvas>
+                    <h3>HOLD</h3>
+                    
+                </div>
+                
+                <div class="controls">
+                    <h4 class="control_title"> CONTROLS </h4>
+                    <div class="controls_keys_1">
+                        <h2 class="controls1_grid_row_1" id="rotateCC_key">C</h2>
+                        <h5 class="controls1_text_grid_row_2"> Rotate Counter-Clockwise </h5>
+
+                        <h2 class="controls1_grid_row_1" id="hold_key">V</h2>
+                        <h5 class="controls1_text_grid_row_2"> Hold piece </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tetris_display">
+                <div class="tetris_header">
+                    <h1> TETRIS </h1>
+                </div>
+                <div class="points_container">
+                    <h4>POINTS</h4>
+                    <h4 id="points"> 0 </h4>
+                </div>
+                <div class="tetris_placeholder">
+                    <canvas id="tetris_screen">
+                    </canvas>
+                    
+                    <div id="game_over_box">
+                        GAME OVER
+                        <button class="game_over_btn"> TRY AGAIN </button>
+                    </div>
+                </div>
+                <div class="tetris_footer">
+                    
+                </div>
+            </div>
+
+            <div class="side_col_next">
+                <div class="side_placeholder_next">
+                    <canvas id="next_piece">
+                    </canvas>
+                    <h3>NEXT</h3>
+                </div>
+                <div class="controls">
+                        <h4 class="control_title"> CONTROLS </h4>
+                        <div class="controls_keys_2">
+                            <h2 class="controls2_grid_row_1" id="rotateC_key"> ↑ </h2>
+                            <h5 class="controls2_text_grid_row_1"> Rotate Clockwise </h5>
+
+                            <h2 class="controls2_grid_row_2" id="moveLeft_key"> ← </h2>
+                            <h5 class="controls2_text_grid_row_2"> Move left </h5>
+
+                            <h2 class="controls2_grid_row_2" id="fall_key"> ↓ </h2>
+                            <h5 class="controls2_text_grid_row_2"> Fall faster </h5>
+
+                            <h2 class="controls2_grid_row_2" id="moveRight_key"> →  </h2>
+                            <h5 class="controls2_text_grid_row_2"> Move right </h5>
+                        </div>
+                    </div>
+    
+                </div>
+                
+            </div>
+            
+        </main>
+
+
+        <footer>
+
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
